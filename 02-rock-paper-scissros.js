@@ -42,8 +42,8 @@ const scores = {
 
             document.querySelector('.js-results').innerHTML = result;
             document.querySelector('.js-moves').innerHTML = `you
-            <img src="images/${playerChoice}-emoji.png" class="move-icon">
-            <img src="images/${computerChoice}-emoji.png" class="move-icon">
+            <img src="${playerChoice}-emoji.png" class="move-icon">
+            <img src="${computerChoice}-emoji.png" class="move-icon">
             computer`;
         }
 
@@ -59,4 +59,5 @@ const scores = {
                 ties : 0    
             };
             document.querySelector('.js-scores').innerText = `Wins: ${score.wins}, Losses: ${score.loss}, Ties: ${score.ties}`;
+
         }
